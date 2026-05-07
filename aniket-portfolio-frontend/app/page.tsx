@@ -190,6 +190,8 @@ export default function HomePage() {
                   View Certificate
                 </a>
               </div>
+            </article>
+
             <article className="border-2 border-black bg-zinc-50 p-5 shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0px_#000] transition-transform">
               <h3 className="text-lg font-bold uppercase tracking-[0.12em] mb-2">
                 Data Analytics with Python
