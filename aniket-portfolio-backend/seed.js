@@ -28,11 +28,11 @@ async function main() {
   await prisma.asset.upsert({
     where: { assetName: 'resume_2026' },
     update: {
-      fileUrl: 'https://drive.google.com/file/d/15OvIHxFdn8l-Z8EBzVfg9hyDB9fLM8Xd/view?usp=drive_link',
+      fileUrl: 'https://drive.google.com/file/d/19jfvmPj1_XXCdJ79QppHlCGm2gwc9V8S/view?usp=drive_link',
     },
     create: {
       assetName: 'resume_2026',
-      fileUrl: 'https://drive.google.com/file/d/15OvIHxFdn8l-Z8EBzVfg9hyDB9fLM8Xd/view?usp=drive_link',
+      fileUrl: 'https://drive.google.com/file/d/19jfvmPj1_XXCdJ79QppHlCGm2gwc9V8S/view?usp=drive_link',
     },
   });
 
