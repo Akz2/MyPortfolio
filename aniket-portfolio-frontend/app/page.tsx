@@ -190,6 +190,21 @@ export default function HomePage() {
                   View Certificate
                 </a>
               </div>
+            <article className="border-2 border-black bg-zinc-50 p-5 shadow-[6px_6px_0px_#000] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0px_#000] transition-transform">
+              <h3 className="text-lg font-bold uppercase tracking-[0.12em] mb-2">
+                Data Analytics with Python
+              </h3>
+              <p className="text-sm text-zinc-700 mb-4">Professional certification verifying data analysis, visualization, and statistical modeling skills using Python libraries like Pandas, Numpy, and Seaborn.</p>
+              <div className="flex gap-3 text-xs font-semibold uppercase tracking-[0.15em]">
+                <a
+                  href="https://drive.google.com/file/d/1Mzs8C40FDQ1uu4wEQ6TNEgyBZbbtxk0A/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 decoration-[3px] decoration-red-500 hover:bg-black hover:text-white px-2 py-1"
+                >
+                  View Certificate
+                </a>
+              </div>
             </article>
           </div>
         </div>
