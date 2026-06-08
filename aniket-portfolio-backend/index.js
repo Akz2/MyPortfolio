@@ -1,4 +1,4 @@
-// index.js
+
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -13,7 +13,6 @@ app.use(cors());
 app.use(express.json());
 
 
-// GET: Root health / welcome route
 app.get('/', (req, res) => {
   res.json({
     status: 'ok',
@@ -21,7 +20,7 @@ app.get('/', (req, res) => {
     routes: ['/api/projects', '/api/resume', '/api/contact'],
   });
 });
-// GET: Fetch all featured projects
+
 app.get('/api/projects', async (req, res) => {
   try {
     const projects = await prisma.project.findMany({
@@ -35,7 +34,7 @@ app.get('/api/projects', async (req, res) => {
   }
 });
 
-// GET: Fetch the latest resume URL
+
 app.get('/api/resume', async (req, res) => {
   try {
     const resume = await prisma.asset.findUnique({
@@ -48,7 +47,6 @@ app.get('/api/resume', async (req, res) => {
   }
 });
 
-// POST: Handle the Brutalist Contact Form
 app.post('/api/contact', async (req, res) => {
   const { senderName, senderEmail, message } = req.body;
   
@@ -61,9 +59,6 @@ app.post('/api/contact', async (req, res) => {
     const newMessage = await prisma.message.create({
       data: { senderName, senderEmail, message }
     });
-
-    // Note: Nodemailer logic goes here to email fentonptc890@gmail.com
-    // For now, we successfully save it to the DB to ensure the API works.
 
     res.status(200).json({ success: true, message: 'Message saved securely.' });
   } catch (error) {
